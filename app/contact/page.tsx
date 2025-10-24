@@ -1,6 +1,7 @@
 "use client";
 import { Source_Code_Pro } from "next/font/google";
 import { useEffect, useState } from "react";
+import { profile } from "../profile";
 import Link from "next/link";
 import { AiOutlineHome } from "react-icons/ai";
 
@@ -87,7 +88,7 @@ export default function Home() {
     </p>
     <br />
     <br />
-    <p className="mt-4 text-center text-black">charanravi.online@gmail.com</p>
+    <p className="mt-4 text-center text-black">{profile.email}</p>
     <br />
     
   </div>
@@ -114,7 +115,7 @@ export default function Home() {
         {/* Social Links */}
         <div className="flex flex-col sm:flex-row text-black justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-8">
           <a
-            href="https://www.linkedin.com/in/r-charan/"
+            href={profile.links.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
@@ -122,7 +123,7 @@ export default function Home() {
             LinkedIn
           </a>
           <a
-            href="https://instagram.com/charan.json"
+            href={profile.links.instagram}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
@@ -130,7 +131,7 @@ export default function Home() {
             Instagram
           </a>
           <a
-            href="https://x.com/charanjson"
+            href={profile.links.x}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
@@ -138,7 +139,7 @@ export default function Home() {
             X (Twitter)
           </a>
           <a
-            href="https://github.com/charanravi-online"
+            href={profile.links.github}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"

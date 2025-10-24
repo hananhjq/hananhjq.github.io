@@ -1,10 +1,12 @@
 {
-  "name": "charan",
+  "name": "hanan",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "GITHUB_PAGES=true next build && next export",
+    "deploy:pages": "npm run export",
     "start": "next start",
     "lint": "next lint"
   },

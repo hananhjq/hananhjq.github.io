@@ -8,6 +8,7 @@
   import { TbWorld } from "react-icons/tb";
   import { FaXTwitter } from "react-icons/fa6";
   import Script from "next/script";
+  import { profile } from "./profile";
 
   const spaceGrotesk = Space_Grotesk({
     weight: ["400", "500", "600", "700"],
@@ -27,7 +28,7 @@
       title: "Wiki",
       description: "A command-line tool to get Wikipedia summaries in your terminal - Powered By Gemini AI",
       tags: ["Python", "Snapcraft", "WinGet", "Gemini AI"],
-      link: "https://charanravi-online.github.io/wiki-project",
+      link: profile.links.wikiProjectUrl || "https://charanravi-online.github.io/wiki-project",
       platforms: [
         { icon: FaWindows, color: "#00A4EF" },
         { icon: FcLinux }
@@ -81,7 +82,7 @@
         <>
           Driven by technology, innovation, and open source. Explore my technical deep dives and projects over at my{" "}
           <a 
-            href="https://github.com/charanravi-online" 
+            href={profile.links.github} 
             target="_blank" 
             rel="noopener noreferrer" 
             className="transition-colors hover:text-sky-500"
@@ -171,7 +172,9 @@
       }
     };
 
-    const remainingLetters = "haran Ravi".split("");
+    const fullName = profile.name;
+    const firstLetter = fullName.charAt(0);
+    const remainingLetters = fullName.slice(1).split("");
 
     return (
       <div className={`${spaceGrotesk.className} bg-black text-[#fefeff] flex flex-col min-h-screen`}>
@@ -207,7 +210,7 @@
                     transition: { duration: 0.5, delay: 1.5 }
                   }}
                 >
-                  Charan Ravi
+                  {profile.name}
                 </motion.h1>
               </motion.div>
             </motion.div>
@@ -228,7 +231,7 @@
                 whileTap={{ scale: 0.95 }}
               >
                 <div className="relative text-3xl font-medium flex">
-                  <span>C</span>
+                  <span>{firstLetter}</span>
                   <AnimatePresence>
                     {isNameExpanded && (
                       <div className="flex">
@@ -573,13 +576,13 @@
                   <div className="max-w-5xl mx-auto">
                     <div className="max-w-2xl mx-auto">
                       <Image
-                        src="/charan.jpg"
-                        alt="Charan Ravi"
+                        src={profile.images.avatar}
+                        alt={profile.name}
                         width={500}
                         height={300}
                         className="mb-8 mx-auto"
                       />
-                      <p className="text-xl md:text-xl text-[#fefeff] underline text-center">contact@charanravi.com</p>
+                      <p className="text-xl md:text-xl text-[#fefeff] underline text-center">{profile.email}</p>
                       <div className="flex items-center gap-2 justify-center mt-4">
                         <div className="relative">
                           <div className="w-2 h-2 bg-[#fefeff] rounded-full animate-pulse"></div>
@@ -589,7 +592,7 @@
                       </div>
                       <div className="flex flex-wrap gap-4 md:gap-8 pt-8 justify-center">
                         <a
-                          href="https://www.linkedin.com/in/r-charan/"
+                          href={profile.links.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-[#969696] hover:text-[#fefeff] transition-colors text-sm px-2 py-1"
@@ -597,7 +600,7 @@
                           LinkedIn
                         </a>
                         <a
-                          href="https://github.com/charanravi-online"
+                          href={profile.links.github}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-[#969696] hover:text-[#fefeff] transition-colors text-sm px-2 py-1"
@@ -605,7 +608,7 @@
                           GitHub
                         </a>
                         <a
-                          href="https://x.com/charanjson"
+                          href={profile.links.x}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-[#969696] hover:text-[#fefeff] transition-colors text-sm px-2 py-1"
@@ -613,7 +616,7 @@
                           X [Twitter]
                         </a>
                         <a
-                          href="https://instagram.com/charan.json"
+                          href={profile.links.instagram}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-[#969696] hover:text-[#fefeff] transition-colors text-sm px-2 py-1"
@@ -621,7 +624,7 @@
                           Instagram
                         </a>
                         <a
-                          href="https://blog.charanravi.com"
+                          href={profile.links.blog || "#"}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-[#969696] hover:text-[#fefeff] transition-colors text-sm px-2 py-1"
@@ -629,7 +632,7 @@
                           Blog
                         </a>
                         <a
-                          href="https://docs.charanravi.com"
+                          href={profile.links.docs || "#"}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-[#969696] hover:text-[#fefeff] transition-colors text-sm px-2 py-1"
@@ -637,7 +640,7 @@
                           Docs
                         </a>
                         <a
-                          href="https://cal.com/charanravi"
+                          href={profile.links.calendar || "#"}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-[#969696] hover:text-[#fefeff] transition-colors text-sm px-2 py-1"
@@ -653,9 +656,9 @@
               {/* Footer */}
               <footer className="px-4 md:px-24 py-8 text-[#969696]">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4 max-w-5xl mx-auto">
-                  <span className="text-sm text-center md:text-left">© 2025 Charan Ravi. All rights reserved.</span>
+                  <span className="text-sm text-center md:text-left">© 2025 {profile.name}. All rights reserved.</span>
                   <div className="flex gap-4 md:gap-8">
-                    <span className="text-sm text-center md:text-left">Design & Code by - <a href="/" className="hover:text-[#fefeff] transition-colors">Charan Ravi</a></span>
+                    <span className="text-sm text-center md:text-left">Design & Code by - <a href="/" className="hover:text-[#fefeff] transition-colors">{profile.name}</a></span>
                   </div>
                 </div>
               </footer>

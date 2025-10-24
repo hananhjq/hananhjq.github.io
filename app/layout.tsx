@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { profile } from "./profile";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -14,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Charan Ravi — Developer",
-  description: "PortFolio",
+  title: `${profile.name} — Developer`,
+  description: "Portfolio",
 };
 
 export default function RootLayout({
