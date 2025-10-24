@@ -19,21 +19,20 @@ export type Profile = {
 };
 
 export const profile: Profile = {
-  // Defaults left as-is until Hanan's details are provided
-  name: "Charan Ravi",
-  email: "contact@charanravi.com",
+  name: "Hanan Javid",
+  email: "hanan.qureshi.hjq@gmail.com",
   images: {
-    avatar: "/charan.jpg",
+    avatar: "/assets/img/profile-photo.jpg",
   },
   links: {
-    linkedin: "https://www.linkedin.com/in/r-charan/",
-    github: "https://github.com/charanravi-online",
-    x: "https://x.com/charanjson",
-    instagram: "https://instagram.com/charan.json",
-    blog: "https://blog.charanravi.com",
-    docs: "https://docs.charanravi.com",
-    calendar: "https://cal.com/charanravi",
-    wikiProjectUrl: "https://charanravi-online.github.io/wiki-project",
+    linkedin: "https://www.linkedin.com/in/hananhjq",
+    github: "#",
+    x: "#",
+    instagram: "#",
+    blog: undefined,
+    docs: undefined,
+    calendar: undefined,
+    wikiProjectUrl: undefined,
   },
 };
 

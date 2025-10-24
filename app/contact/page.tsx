@@ -122,14 +122,16 @@ export default function Home() {
           >
             LinkedIn
           </a>
-          <a
-            href={profile.links.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-          >
-            Instagram
-          </a>
+          {profile.links.instagram && (
+            <a
+              href={profile.links.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              Instagram
+            </a>
+          )}
           <a
             href={profile.links.x}
             target="_blank"
@@ -138,14 +140,16 @@ export default function Home() {
           >
             X (Twitter)
           </a>
-          <a
-            href={profile.links.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-          >
-            GitHub
-          </a>
+          {profile.links.github && (
+            <a
+              href={profile.links.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              GitHub
+            </a>
+          )}
         </div>
       </section>
     </div>

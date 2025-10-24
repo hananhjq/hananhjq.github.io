@@ -1,5 +1,6 @@
 "use client";
 import { Source_Code_Pro } from "next/font/google";
+import { profile } from "../profile";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { AiOutlineHome } from "react-icons/ai";
@@ -147,12 +148,12 @@ export default function Home() {
       {/* Contact Section */}
       {/* <section id="contact" className="p-16 text-center">
         <h2 className="text-2xl font-bold">// CONTACT //</h2>
-        <p className="mt-4">charanravi.online@gmail.com</p>
+    <p className="mt-4">{profile.email}</p>
         <p>Looking for new opportunities.</p>
 
         <div className="flex justify-center space-x-4 mt-8">
           <a
-            href="https://www.linkedin.com/in/r-charan/"
+            href={profile.links.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
@@ -160,7 +161,7 @@ export default function Home() {
             LinkedIn
           </a>
           <a
-            href="https://instagram.com/charan.json"
+            href={profile.links.instagram || "#"}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
@@ -168,7 +169,7 @@ export default function Home() {
             Instagram
           </a>
           <a
-            href="https://x.com/PyCharan"
+            href={profile.links.x}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
@@ -176,7 +177,7 @@ export default function Home() {
             X (Formerly Twitter)
           </a>
           <a
-            href="https://github.com/charanravi-online"
+            href={profile.links.github || "#"}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
