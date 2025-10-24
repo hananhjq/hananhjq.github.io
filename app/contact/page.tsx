@@ -1,6 +1,7 @@
 "use client";
 import { Source_Code_Pro } from "next/font/google";
 import { useEffect, useState } from "react";
+import { profile } from "../profile";
 import Link from "next/link";
 import { AiOutlineHome } from "react-icons/ai";
 
@@ -87,7 +88,7 @@ export default function Home() {
     </p>
     <br />
     <br />
-    <p className="mt-4 text-center text-black">charanravi.online@gmail.com</p>
+    <p className="mt-4 text-center text-black">{profile.email}</p>
     <br />
     
   </div>
@@ -114,37 +115,41 @@ export default function Home() {
         {/* Social Links */}
         <div className="flex flex-col sm:flex-row text-black justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-8">
           <a
-            href="https://www.linkedin.com/in/r-charan/"
+            href={profile.links.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
           >
             LinkedIn
           </a>
+          {profile.links.instagram && (
+            <a
+              href={profile.links.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              Instagram
+            </a>
+          )}
           <a
-            href="https://instagram.com/charan.json"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-          >
-            Instagram
-          </a>
-          <a
-            href="https://x.com/charanjson"
+            href={profile.links.x}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
           >
             X (Twitter)
           </a>
-          <a
-            href="https://github.com/charanravi-online"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-          >
-            GitHub
-          </a>
+          {profile.links.github && (
+            <a
+              href={profile.links.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              GitHub
+            </a>
+          )}
         </div>
       </section>
     </div>
