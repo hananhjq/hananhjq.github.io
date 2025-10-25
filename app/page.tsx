@@ -61,7 +61,7 @@
 
   const audienceContent = {
     anyone: {
-      title: "For Anyone",
+      title: "hanan",
       description: "I'm a developer who loves creating meaningful digital experiences, with a focus on tech, minimalism, and where they intersect.",
       skills: [""]
     },
@@ -318,7 +318,7 @@
                       paddingRight: '1rem'
                     }}
                   >
-                    {(['anyone', 'recruiters', 'engineers', 'product-managers'] as AudienceType[]).map((audience) => (
+                    {(['anyone'] as AudienceType[]).map((audience) => (
                       <button
                         key={audience}
                         onClick={() => setSelectedAudience(audience)}
