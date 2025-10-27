@@ -103,6 +103,8 @@
     }
   };
 
+  const basePath = process.env.NODE_ENV === 'production' ? '/hananhjq.github.io' : '';
+
   export default function Home() {
     const [loading, setLoading] = useState(true);
     const [activeSection, setActiveSection] = useState("intro");
@@ -409,11 +411,12 @@
                 {/* Work Experience Section */}
                 <section id="background" className="min-h-screen px-4 md:px-24 py-8 md:py-16 pt-20">
                   <div className="max-w-5xl mx-auto">
+                    <h2 className="text-4xl md:text-7xl font-medium mb-8 max-w-4xl mx-auto">work.</h2>
                     <div className="max-w-2xl mx-auto">
                       <div className="mt-16">
                         <div className="relative w-40 h-40 flex-shrink-0 mb-8">
                           <Image
-                            src="assets/img/logo-invisible-tech.jpg"
+                            src={`${basePath}/${'assets/img/logo-invisible-tech.jpg'}`}
                             alt="Invisible Technologies Logo"
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -437,7 +440,7 @@
                       <br/>
                       <div className="relative w-48 h-40 flex-shrink-0 mb-4">
                         <Image
-                          src="assets/img/logo-revolut.jpg"
+                          src={`${basePath}/${'assets/img/logo-revolut.jpg'}`}
                           alt="Revolut Logo"
                           fill
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -460,7 +463,7 @@
                       <div className="mt-16">
                         <div className="relative w-24 h-24 flex-shrink-0 mb-8">
                           <Image
-                            src="assets/img/logo-dask-power.jpg"
+                            src={`${basePath}/${'assets/img/logo-dask-power.jpg'}`}
                             alt="Dask Power Pvt. Ltd Logo"
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -487,6 +490,7 @@
                 {/* Education Section */}
                 <section id="education" className="min-h-screen px-4 md:px-24 py-8 md:py-16 pt-20">
                   <div className="max-w-5xl mx-auto">
+                    <h2 className="text-4xl md:text-7xl font-medium mb-8 max-w-4xl mx-auto">education.</h2>
                     <div className="max-w-2xl mx-auto">
                       <div className="space-y-8">
                         <div>
@@ -509,6 +513,7 @@
                 {/* Certifications Section */}
                 <section id="certifications" className="min-h-screen px-4 md:px-24 py-8 md:py-16 pt-20">
                   <div className="max-w-5xl mx-auto">
+                    <h2 className="text-4xl md:text-7xl font-medium mb-8 max-w-4xl mx-auto">certifications.</h2>
                     <div className="max-w-2xl mx-auto">
                       <div className="space-y-8">
                         <div>
@@ -535,6 +540,7 @@
                 {/* Skills Section */}
                 <section id="skills" className="min-h-screen px-4 md:px-24 py-8 md:py-16 pt-20">
                   <div className="max-w-5xl mx-auto">
+                    <h2 className="text-4xl md:text-7xl font-medium mb-8 max-w-4xl mx-auto">skills.</h2>
                     <div className="max-w-2xl mx-auto">
                       <div className="grid md:grid-cols-2 gap-12">
                         <div>
@@ -619,9 +625,10 @@
                 {/* Contact Section */}
                 <section id="contact" className="min-h-screen px-4 md:px-24 py-8 md:py-16 pt-20">
                   <div className="max-w-5xl mx-auto">
+                    <h2 className="text-4xl md:text-7xl font-medium mb-8 max-w-4xl mx-auto">contact.</h2>
                     <div className="max-w-2xl mx-auto">
                       <Image
-                        src={profile.images.avatar}
+                        src={`${basePath}/${profile.images.avatar}`}
                         alt={profile.name}
                         width={500}
                         height={300}
