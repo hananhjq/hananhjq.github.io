@@ -76,7 +76,7 @@
           {" "}etc.
         </>
       ),
-      skills: [<a href="https://drive.google.com/file/d/1s_Dh10yfpDUlSJxw7kyDGyVuuo3OWkhk/view?usp=sharing" download className="hover:text-[#fefeff] transition-colors">Download Resume</a>]
+      skills: [<a href="https://drive.google.com/file/d/1s_Dh10yfpDUlSJxw7kyDGyVuuo3OWkhk/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hover:text-[#fefeff] transition-colors">Download Resume</a>]
     },
     engineers: {
       title: "Engineers",
@@ -94,12 +94,12 @@
           </a>
         </>
       ),
-      skills: [<a href="https://drive.google.com/file/d/1s_Dh10yfpDUlSJxw7kyDGyVuuo3OWkhk/view?usp=sharing" download className="hover:text-[#fefeff] transition-colors">Download Resume</a>]
+      skills: [<a href="https://drive.google.com/file/d/1s_Dh10yfpDUlSJxw7kyDGyVuuo3OWkhk/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hover:text-[#fefeff] transition-colors">Download Resume</a>]
     },
     'product-managers': {
       title: "Product Managers",
       description: "I bring technical expertise to product development, bridging the gap between business objectives and technical execution.",
-      skills: [<a href="https://drive.google.com/file/d/1s_Dh10yfpDUlSJxw7kyDGyVuuo3OWkhk/view?usp=sharing" download className="hover:text-[#fefeff] transition-colors">Download Resume</a>]
+      skills: [<a href="https://drive.google.com/file/d/1s_Dh10yfpDUlSJxw7kyDGyVuuo3OWkhk/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hover:text-[#fefeff] transition-colors">Download Resume</a>]
     }
   };
 
@@ -318,8 +318,9 @@
                       paddingRight: '1rem'
                     }}
                   >
-                    <a href="https://drive.google.com/file/d/1s_Dh10yfpDUlSJxw7kyDGyVuuo3OWkhk/view?usp=sharing" 
-                       download 
+                    <a href="https://drive.google.com/file/d/1s_Dh10yfpDUlSJxw7kyDGyVuuo3OWkhk/view?usp=sharing"
+                       target="_blank"
+                       rel="noopener noreferrer"
                        className="text-[#fefeff] font-medium transition-colors whitespace-nowrap flex-shrink-0">
                       Download Resume
                     </a>
@@ -412,7 +413,7 @@
                       <div className="mt-16">
                         <div className="relative w-40 h-40 flex-shrink-0 mb-8">
                           <Image
-                            src="/assets/img/logo-invisible-tech.jpg"
+                            src="assets/img/logo-invisible-tech.jpg"
                             alt="Invisible Technologies Logo"
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -436,7 +437,7 @@
                       <br/>
                       <div className="relative w-48 h-40 flex-shrink-0 mb-4">
                         <Image
-                          src="/assets/img/logo-revolut.jpg"
+                          src="assets/img/logo-revolut.jpg"
                           alt="Revolut Logo"
                           fill
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -459,7 +460,7 @@
                       <div className="mt-16">
                         <div className="relative w-24 h-24 flex-shrink-0 mb-8">
                           <Image
-                            src="/assets/img/logo-dask-power.jpg"
+                            src="assets/img/logo-dask-power.jpg"
                             alt="Dask Power Pvt. Ltd Logo"
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -569,10 +570,10 @@
                       <div>
                         <div className="space-y-8">
                           <p className="text-sm text-[#fefeff]">
-                          I'm a software developer based in India with over 4 years of experience across brand and product, 
-                          at companies large and small.
-                          I take pride in my craft, and love mentoring earlier career developers. 
-                          I develop cross functional partnerships, and thrive in complex, ambiguous environments.
+                          I'm an AI Data Professional based in India, leveraging my background that combines
+                          technical rigor with a specialization in complex contextual analysis.
+                          My experience spans ensuring the integrity of AI models through high quality 
+                          data training and maintaining operational excellence.
                           </p>
                         </div>
                       </div>
@@ -580,9 +581,9 @@
                       <div className="md:mt-32">
                         <div className="space-y-8">
                           <p className="text-sm text-[#fefeff]">
-                          My approach combines technical expertise with creative problem-solving,
-                            always striving to build solutions that are both elegant and practical.
-                            Zooming out on company strategy, zooming in on details.
+                          I thrive in environments that demand adaptability and a sharp focus,
+                          analyzing the granular detail to inform the broader operational and
+                          technological strategy.
                           </p>
                         </div>
                       </div>
@@ -595,8 +596,9 @@
                       <div>
                         <div className="space-y-8">
                           <p className="text-sm text-[#fefeff]">
-                            In my free time I try to challenge myself with new projects, learn new things, compose music,
-                            practice yoga, go for a long run or just kick back relax at a temple nearby.
+                            In my free time I look to challenge and focus myself in different ways:
+                            I play cricket, find mental clarity while cycling and express my creativity
+                            through drawing.
                           </p>
                         </div>
                       </div>
@@ -604,8 +606,9 @@
                       <div className="md:mt-32">
                         <div className="space-y-8">
                           <p className="text-sm text-[#fefeff]">
-                            Creating something from the ground up and watching it grow is incredibly fulfilling.
-                            Engaging in this process with passion feels spiritual to me.
+                            The process of building, refining and watching a complex system or model 
+                            grow into a robust solution is deeply fullfiling. Engaging in this persuit 
+                            with precison and passion feels like true craftsmanship.
                           </p>
                         </div>
                       </div>
@@ -641,34 +644,6 @@
                         >
                           LinkedIn
                         </a>
-                        {profile.links.github && (
-                          <a
-                            href={profile.links.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-[#969696] hover:text-[#fefeff] transition-colors text-sm px-2 py-1"
-                          >
-                            GitHub
-                          </a>
-                        )}
-                        <a
-                          href={profile.links.x}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-[#969696] hover:text-[#fefeff] transition-colors text-sm px-2 py-1"
-                        >
-                          X [Twitter]
-                        </a>
-                        {profile.links.instagram && (
-                          <a
-                            href={profile.links.instagram}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-[#969696] hover:text-[#fefeff] transition-colors text-sm px-2 py-1"
-                          >
-                            Instagram
-                          </a>
-                        )}
                         {profile.links.blog && (
                           <a
                             href={profile.links.blog}
