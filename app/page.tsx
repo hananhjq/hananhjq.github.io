@@ -76,7 +76,7 @@
           {" "}etc.
         </>
       ),
-      skills: [<a href="https://drive.google.com/file/d/1Xu9YMnGVI0UzZkG-t2Eie5ZeZD6cnjxe/view?usp=sharing" download className="hover:text-[#fefeff] transition-colors">Download Resume</a>]
+      skills: [<a href="https://drive.google.com/file/d/1s_Dh10yfpDUlSJxw7kyDGyVuuo3OWkhk/view?usp=sharing" download className="hover:text-[#fefeff] transition-colors">Download Resume</a>]
     },
     engineers: {
       title: "Engineers",
@@ -94,12 +94,12 @@
           </a>
         </>
       ),
-      skills: [<a href="https://drive.google.com/file/d/1Xu9YMnGVI0UzZkG-t2Eie5ZeZD6cnjxe/view?usp=sharing" download className="hover:text-[#fefeff] transition-colors">Download Resume</a>]
+      skills: [<a href="https://drive.google.com/file/d/1s_Dh10yfpDUlSJxw7kyDGyVuuo3OWkhk/view?usp=sharing" download className="hover:text-[#fefeff] transition-colors">Download Resume</a>]
     },
     'product-managers': {
       title: "Product Managers",
       description: "I bring technical expertise to product development, bridging the gap between business objectives and technical execution.",
-      skills: [<a href="https://drive.google.com/file/d/1Xu9YMnGVI0UzZkG-t2Eie5ZeZD6cnjxe/view?usp=sharing" download className="hover:text-[#fefeff] transition-colors">Download Resume</a>]
+      skills: [<a href="https://drive.google.com/file/d/1s_Dh10yfpDUlSJxw7kyDGyVuuo3OWkhk/view?usp=sharing" download className="hover:text-[#fefeff] transition-colors">Download Resume</a>]
     }
   };
 
@@ -318,7 +318,7 @@
                       paddingRight: '1rem'
                     }}
                   >
-                    <a href="https://drive.google.com/file/d/1Xu9YMnGVI0UzZkG-t2Eie5ZeZD6cnjxe/view?usp=sharing" 
+                    <a href="https://drive.google.com/file/d/1s_Dh10yfpDUlSJxw7kyDGyVuuo3OWkhk/view?usp=sharing" 
                        download 
                        className="text-[#fefeff] font-medium transition-colors whitespace-nowrap flex-shrink-0">
                       Download Resume
