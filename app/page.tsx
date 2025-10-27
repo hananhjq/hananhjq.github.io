@@ -318,19 +318,11 @@
                       paddingRight: '1rem'
                     }}
                   >
-                    {(['anyone'] as AudienceType[]).map((audience) => (
-                      <button
-                        key={audience}
-                        onClick={() => setSelectedAudience(audience)}
-                        className={`transition-colors whitespace-nowrap flex-shrink-0 ${
-                          selectedAudience === audience 
-                            ? 'text-[#fefeff] font-medium' 
-                            : 'text-[#969696] hover:text-[#fefeff]'
-                        }`}
-                      >
-                        {audienceContent[audience].title}
-                      </button>
-                    ))}
+                    <a href="https://drive.google.com/file/d/1Xu9YMnGVI0UzZkG-t2Eie5ZeZD6cnjxe/view?usp=sharing" 
+                       download 
+                       className="text-[#fefeff] font-medium transition-colors whitespace-nowrap flex-shrink-0">
+                      Download Resume
+                    </a>
                   </div>
                 </div>
               </header>
