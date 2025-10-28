@@ -212,7 +212,7 @@
                     transition: { duration: 0.5, delay: 1.5 }
                   }}
                 >
-                  Hanan javid Qureshi
+                  Hanan Javid Qureshi
                 </motion.h1>
               </motion.div>
             </motion.div>
