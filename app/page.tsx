@@ -212,7 +212,7 @@
                     transition: { duration: 0.5, delay: 1.5 }
                   }}
                 >
-                  {profile.name}
+                  Hanan javid Qureshi
                 </motion.h1>
               </motion.div>
             </motion.div>
@@ -688,9 +688,6 @@
               <footer className="px-4 md:px-24 py-8 text-[#969696]">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4 max-w-5xl mx-auto">
                   <span className="text-sm text-center md:text-left">© 2025 {profile.name}. All rights reserved.</span>
-                  <div className="flex gap-4 md:gap-8">
-                    <span className="text-sm text-center md:text-left">Design & Code by - <a href="/" className="hover:text-[#fefeff] transition-colors">{profile.name}</a></span>
-                  </div>
                 </div>
               </footer>
             </motion.div>
