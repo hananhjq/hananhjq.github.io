@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: `${profile.name}`,
+  title: "Hanan Qureshi",
   description: "Portfolio",
 };
 
