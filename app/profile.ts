@@ -22,7 +22,7 @@ export const profile: Profile = {
   name: "Hanan Javid",
   email: "hanan.qureshi.hjq@gmail.com",
   images: {
-    avatar: "https://drive.google.com/uc?id=1V5j6dMWAoamoy8527hVVWtDa-0IUyT5M",
+    avatar: "/assets/img/hanan-javid-profile-avatar.jpg.jpg",
   },
   links: {
     linkedin: "https://www.linkedin.com/in/hananhjq",
