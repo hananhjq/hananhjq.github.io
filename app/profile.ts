@@ -19,7 +19,7 @@ export type Profile = {
 };
 
 export const profile: Profile = {
-  name: "HananQureshi",
+  name: "Hanan Qureshi",
   email: "hanan.qureshi.hjq@gmail.com",
   images: {
     avatar: "/assets/img/hanan-javid-profile-avatar.jpg.jpg",
