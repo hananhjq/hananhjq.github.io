@@ -493,7 +493,7 @@
                       <div className="space-y-8">
                         <div>
                           <p className="font-mono text-sm text-[#969696]">2020 — 2022</p>
-                          <h3 className="text-2xl font-medium text-[#fefeff]">Master of Administration</h3>
+                          <h3 className="text-2xl font-medium text-[#fefeff]">Master of Adminstration</h3>
                           <p className="text-xs text-[#969696]">Specialization: Marketing and IT</p>
                           <p className="text-sm text-[#969696]">University of Kashmir, Srinagar</p>
                         </div>
