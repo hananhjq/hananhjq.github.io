@@ -412,15 +412,6 @@
                     <h2 className="text-4xl md:text-7xl font-medium mb-8 max-w-4xl mx-auto">work.</h2>
                     <div className="max-w-2xl mx-auto">
                       <div className="mt-16">
-                        <div className="relative w-40 h-40 flex-shrink-0 mb-8">
-                          <Image
-                            src="https://drive.google.com/uc?id=1H5N5ZNijji_AqZ5ri-ayFpxU7VixNKgv"
-                            alt="Invisible Technologies Logo"
-                            fill
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                            style={{ objectFit: "contain" }}
-                          />
-                        </div>
                         <div className="space-y-4">
                           <p className="font-mono text-sm text-[#969696]">Invisible Technologies</p>
                           <h3 className="text-4xl font-medium text-[#fefeff]">Advanced AI Data Trainer</h3>
@@ -436,15 +427,6 @@
                       <br/>
                       <br/>
                       <br/>
-                      <div className="relative w-48 h-40 flex-shrink-0 mb-4">
-                        <Image
-                          src="https://drive.google.com/uc?id=1Wqo-2COHWsWVDEfou4yP5fpxbZsDKG5n"
-                          alt="Revolut Logo"
-                          fill
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          style={{ objectFit: "contain" }}
-                        />
-                      </div>
                       <div className="space-y-4">
                         <p className="font-mono text-sm text-[#969696]">Revolut</p>
                         <h3 className="text-4xl font-medium text-[#fefeff]">Support Specialist (KYC and Verification)</h3>
@@ -459,15 +441,6 @@
                       <br />
                       <br />
                       <div className="mt-16">
-                        <div className="relative w-24 h-24 flex-shrink-0 mb-8">
-                          <Image
-                            src="https://drive.google.com/uc?id=1V5j6dMWAoamoy8527hVVWtDa-0IUyT5M"
-                            alt="Dask Power Pvt. Ltd Logo"
-                            fill
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                            style={{ objectFit: "contain" }}
-                          />
-                        </div>
                         <div className="space-y-4">
                           <p className="font-mono text-sm text-[#969696]">Dask Power Pvt. Ltd</p>
                           <h3 className="text-4xl font-medium text-[#fefeff]">Management Trainee</h3>
