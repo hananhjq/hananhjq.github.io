@@ -414,7 +414,7 @@
                       <div className="mt-16">
                         <div className="relative w-40 h-40 flex-shrink-0 mb-8">
                           <Image
-                            src="/assets/img/logo-invisible-technologies.jpg"
+                            src="https://i.imgur.com/your-invisible-tech-logo.jpg"
                             alt="Invisible Technologies Logo"
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -438,7 +438,7 @@
                       <br/>
                       <div className="relative w-48 h-40 flex-shrink-0 mb-4">
                         <Image
-                          src="/assets/img/logo-revolut.jpg"
+                          src="https://i.imgur.com/your-revolut-logo.jpg"
                           alt="Revolut Logo"
                           fill
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -461,7 +461,7 @@
                       <div className="mt-16">
                         <div className="relative w-24 h-24 flex-shrink-0 mb-8">
                           <Image
-                            src="/assets/img/logo-dask-power.jpg"
+                            src="https://i.imgur.com/your-dask-power-logo.jpg"
                             alt="Dask Power Pvt. Ltd Logo"
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
