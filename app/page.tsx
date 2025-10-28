@@ -103,8 +103,6 @@
     }
   };
 
-  const basePath = process.env.NODE_ENV === 'production' ? '/hananhjq.github.io' : '';
-
   export default function Home() {
     const [loading, setLoading] = useState(true);
     const [activeSection, setActiveSection] = useState("intro");
@@ -416,7 +414,7 @@
                       <div className="mt-16">
                         <div className="relative w-40 h-40 flex-shrink-0 mb-8">
                           <Image
-                            src={`${basePath}/${'assets/img/logo-invisible-tech.jpg'}`}
+                            src="/assets/img/logo-invisible-technologies.jpg"
                             alt="Invisible Technologies Logo"
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -440,7 +438,7 @@
                       <br/>
                       <div className="relative w-48 h-40 flex-shrink-0 mb-4">
                         <Image
-                          src={`${basePath}/${'assets/img/logo-revolut.jpg'}`}
+                          src="/assets/img/logo-revolut.jpg"
                           alt="Revolut Logo"
                           fill
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -463,7 +461,7 @@
                       <div className="mt-16">
                         <div className="relative w-24 h-24 flex-shrink-0 mb-8">
                           <Image
-                            src={`${basePath}/${'assets/img/logo-dask-power.jpg'}`}
+                            src="/assets/img/logo-dask-power.jpg"
                             alt="Dask Power Pvt. Ltd Logo"
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -628,7 +626,7 @@
                     <h2 className="text-4xl md:text-7xl font-medium mb-8 max-w-4xl mx-auto">contact.</h2>
                     <div className="max-w-2xl mx-auto">
                       <Image
-                        src={`${basePath}/${profile.images.avatar}`}
+                        src={profile.images.avatar}
                         alt={profile.name}
                         width={500}
                         height={300}
