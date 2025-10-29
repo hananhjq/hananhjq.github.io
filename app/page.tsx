@@ -490,18 +490,40 @@
                   <div className="max-w-5xl mx-auto">
                     <h2 className="text-4xl md:text-7xl font-medium mb-8 max-w-4xl mx-auto">education.</h2>
                     <div className="max-w-2xl mx-auto">
-                      <div className="space-y-8">
+                      <div className="space-y-16">
                         <div>
-                          <p className="font-mono text-sm text-[#969696]">2020 — 2022</p>
-                          <h3 className="text-2xl font-medium text-[#fefeff]">Master of Adminstration</h3>
-                          <p className="text-xs text-[#969696]">Specialization: Marketing and IT</p>
-                          <p className="text-sm text-[#969696]">University of Kashmir, Srinagar</p>
+                          <div className="relative w-24 h-24 flex-shrink-0 mb-8">
+                            <Image
+                              src="/assets/img/logo-kashmir-university.png"
+                              alt="University of Kashmir Logo"
+                              fill
+                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                              style={{ objectFit: "contain" }}
+                            />
+                          </div>
+                          <div className="space-y-2">
+                            <p className="font-mono text-sm text-[#969696]">2020 — 2022</p>
+                            <h3 className="text-2xl font-medium text-[#fefeff]">Master of Adminstration</h3>
+                            <p className="text-xs text-[#969696]">Specialization: Marketing and IT</p>
+                            <p className="text-sm text-[#969696]">University of Kashmir, Srinagar</p>
+                          </div>
                         </div>
                         <div>
-                          <p className="font-mono text-sm text-[#969696]">2015 — 2019</p>
-                          <h3 className="text-2xl font-medium text-[#fefeff]">Bachelor of Technology</h3>
-                          <p className="text-xs text-[#969696]">Specialization: Electronics and Communication</p>
-                          <p className="text-sm text-[#969696]">Islamic University of Science and Technology, Awantipora</p>
+                          <div className="relative w-24 h-24 flex-shrink-0 mb-8">
+                            <Image
+                              src="/assets/img/logo-iust.png"
+                              alt="Islamic University of Science and Technology Logo"
+                              fill
+                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                              style={{ objectFit: "contain" }}
+                            />
+                          </div>
+                          <div className="space-y-2">
+                            <p className="font-mono text-sm text-[#969696]">2015 — 2019</p>
+                            <h3 className="text-2xl font-medium text-[#fefeff]">Bachelor of Technology</h3>
+                            <p className="text-xs text-[#969696]">Specialization: Electronics and Communication</p>
+                            <p className="text-sm text-[#969696]">Islamic University of Science and Technology, Awantipora</p>
+                          </div>
                         </div>
                       </div>
                     </div>
