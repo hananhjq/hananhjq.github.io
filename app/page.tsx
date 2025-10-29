@@ -494,7 +494,7 @@
                         <div>
                           <div className="relative w-24 h-24 flex-shrink-0 mb-8">
                             <Image
-                              src="/assets/img/logo-kashmir-university.png"
+                              src="/assets/img/logo-kashmir-university.png.png"
                               alt="University of Kashmir Logo"
                               fill
                               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -511,7 +511,7 @@
                         <div>
                           <div className="relative w-24 h-24 flex-shrink-0 mb-8">
                             <Image
-                              src="/assets/img/logo-iust.png"
+                              src="/assets/img/logo-iust.png.png"
                               alt="Islamic University of Science and Technology Logo"
                               fill
                               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
