@@ -3,18 +3,12 @@
   import { motion, AnimatePresence } from "framer-motion";
   import { Space_Grotesk } from "next/font/google";
   import Image from "next/image";
-  import dynamic from "next/dynamic";
   import { FaBitcoin, FaWindows } from "react-icons/fa";
   import { FcLinux } from "react-icons/fc";
   import { TbWorld } from "react-icons/tb";
   import { FaXTwitter } from "react-icons/fa6";
   import Script from "next/script";
   import { profile } from "./profile";
-
-  const ParticlesBackground = dynamic(
-    () => import("./components/ParticlesBackground"),
-    { ssr: false }
-  );
 
   const spaceGrotesk = Space_Grotesk({
     weight: ["400", "500", "600", "700"],
@@ -186,18 +180,6 @@
 
     return (
       <div className={`${spaceGrotesk.className} bg-black text-[#fefeff] flex flex-col min-h-screen`}>
-        <div
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            zIndex: -1,
-          }}
-        >
-          <ParticlesBackground />
-        </div>
         {/* Google Analytics */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-KD6ZK493X5" />
         <Script id="google-analytics">
@@ -430,7 +412,8 @@
                     <h2 className="text-4xl md:text-7xl font-medium mb-8 max-w-4xl mx-auto">work.</h2>
                     <div className="max-w-2xl mx-auto">
                       <div className="mt-16">
-                        <div className="relative w-40 h-40 flex-shrink-0 mb-8">
+                        <div className="border border-gray-800 rounded-xl p-6 mb-8">
+                          <div className="relative w-40 h-40 flex-shrink-0 mb-8">
                           <Image
                             src="/assets/img/logo-invisible-tech.jpg.jpg"
                             alt="Invisible Technologies Logo"
@@ -438,8 +421,8 @@
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             style={{ objectFit: "contain" }}
                           />
-                        </div>
-                        <div className="space-y-4">
+                          </div>
+                          <div className="space-y-4">
                           <p className="font-mono text-sm text-[#969696]">Invisible Technologies</p>
                           <h3 className="text-4xl font-medium text-[#fefeff]">Advanced AI Data Trainer</h3>
                           <p className="text-sm text-[#fefeff]">May 2024 — Present &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remote</p>
@@ -450,11 +433,10 @@
                             <li>Collaborate with trainers and researchers to refine training protocols.</li>
                           </ul>
                         </div>
+                        </div>
                       </div>
-                      <br/>
-                      <br/>
-                      <br/>
-                      <div className="relative w-48 h-40 flex-shrink-0 mb-4">
+                      <div className="border border-gray-800 rounded-xl p-6 mb-8">
+                        <div className="relative w-48 h-40 flex-shrink-0 mb-4">
                         <Image
                           src="/assets/img/logo-revolut.jpg.png"
                           alt="Revolut Logo"
@@ -462,8 +444,8 @@
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           style={{ objectFit: "contain" }}
                         />
-                      </div>
-                      <div className="space-y-4">
+                        </div>
+                        <div className="space-y-4">
                         <p className="font-mono text-sm text-[#969696]">Revolut</p>
                         <h3 className="text-4xl font-medium text-[#fefeff]">Support Specialist (KYC and Verification)</h3>
                         <p className="text-sm text-[#fefeff]">Feb 2024 — June 2024 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jammu & Kashmir</p>
@@ -472,11 +454,9 @@
                           <li>Maintained adherence to AML and KYC standards and internal policies.</li>
                           <li>Analyzed customer documentation to ensure compliance and resolve discrepancies.</li>
                         </ul>
+                        </div>
                       </div>
-                      <br />
-                      <br />
-                      <br />
-                      <div className="mt-16">
+                      <div className="border border-gray-800 rounded-xl p-6">
                         <div className="relative w-24 h-24 flex-shrink-0 mb-8">
                           <Image
                             src="/assets/img/logo-dask-power.jpg.jpg"
@@ -485,8 +465,8 @@
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             style={{ objectFit: "contain" }}
                           />
-                        </div>
-                        <div className="space-y-4">
+                          </div>
+                          <div className="space-y-4">
                           <p className="font-mono text-sm text-[#969696]">Dask Power Pvt. Ltd</p>
                           <h3 className="text-4xl font-medium text-[#fefeff]">Management Trainee</h3>
                           <p className="text-sm text-[#fefeff]">2021 — 2022 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jammu & Kashmir</p>
@@ -495,6 +475,7 @@
                             <li>Maintained a database of 15,000+ installations and supported data-driven decisions.</li>
                             <li>Onboarded 45 new clients by aligning energy needs with sustainable solutions.</li>
                           </ul>
+                        </div>
                         </div>
                       </div>
                     </div>
@@ -508,8 +489,8 @@
                   <div className="max-w-5xl mx-auto">
                     <h2 className="text-4xl md:text-7xl font-medium mb-8 max-w-4xl mx-auto">education.</h2>
                     <div className="max-w-2xl mx-auto">
-                      <div className="space-y-16">
-                        <div>
+                      <div className="space-y-8">
+                        <div className="border border-gray-800 rounded-xl p-6">
                           <div className="relative w-24 h-24 flex-shrink-0 mb-8">
                             <Image
                               src="/assets/img/logo-kashmir-university.png.png"
@@ -526,7 +507,7 @@
                             <p className="text-sm text-[#969696]">University of Kashmir, Srinagar</p>
                           </div>
                         </div>
-                        <div>
+                        <div className="border border-gray-800 rounded-xl p-6">
                           <div className="relative w-24 h-24 flex-shrink-0 mb-8">
                             <Image
                               src="/assets/img/logo-iust.png.png"
