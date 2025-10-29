@@ -9,6 +9,7 @@
   import { FaXTwitter } from "react-icons/fa6";
   import Script from "next/script";
   import { profile } from "./profile";
+  import ParticlesBackground from "./components/ParticlesBackground";
 
   const spaceGrotesk = Space_Grotesk({
     weight: ["400", "500", "600", "700"],
@@ -180,6 +181,17 @@
 
     return (
       <div className={`${spaceGrotesk.className} bg-black text-[#fefeff] flex flex-col min-h-screen`}>
+        <ParticlesBackground />
+        <style jsx global>{`
+          #tsparticles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+          }
+        `}</style>
         {/* Google Analytics */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-KD6ZK493X5" />
         <Script id="google-analytics">
