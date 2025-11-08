@@ -25,88 +25,9 @@
     { id: "contact", title: "Contact" }
   ];
 
-  const workProjects = [
-    {
-      title: "Wiki",
-      description: "A command-line tool to get Wikipedia summaries in your terminal - Powered By Gemini AI",
-      tags: ["Python", "Snapcraft", "WinGet", "Gemini AI"],
-      link: profile.links.wikiProjectUrl || "#",
-      platforms: [
-        { icon: FaWindows, color: "#00A4EF" },
-        { icon: FcLinux }
-      ]
-    },
-    {
-      title: "BTC Converter", 
-      description: "A Basic Bitcoin to Fiat converter with price feeds from Coindesk",
-      tags: ["Python", "JavaScript", "HTML", "CSS"],
-      link: "https://github.com/bitkarrot/satsconverter",
-      platforms: [
-        { icon: TbWorld, color: "#4285F4" },
-        // { icon: FaBitcoin, color: "#F7931A" }
-      ]
-    },
-    // {
-    //   title: "BotPool", 
-    //   description: "An X (Twitter) bot that responds to mentions with witty Deadpool-style quips and one-liners",
-    //   tags: ["Python", "X", "Twitter API"],
-    //   link: "https://github.com/charanravi-online/BotPool",
-    //   platforms: [
-    //     { icon: FaXTwitter, color: "#fefeff" }
-    //   ]
-    // }
-  ];
-
-  type AudienceType = 'anyone' | 'recruiters' | 'engineers' | 'product-managers';
-
-  const audienceContent = {
-    anyone: {
-      title: "hanan",
-      description: "I'm a developer who loves creating meaningful digital experiences, with a focus on tech, minimalism, and where they intersect.",
-      skills: [""]
-    },
-    recruiters: {
-      title: "Recruiters",
-      description: (
-        <>
-          Software developer with over 4 years of experience building software solutions. My expertise includes{" "}
-          <span className="hover:text-[#3776AB] transition-colors cursor-default">Python</span>
-          {", "}
-          <span className="hover:text-[#F7DF1E] transition-colors cursor-default">JavaScript</span>
-          {" "}etc.
-        </>
-      ),
-      skills: [<a href="https://drive.google.com/file/d/1s_Dh10yfpDUlSJxw7kyDGyVuuo3OWkhk/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hover:text-[#fefeff] transition-colors">Download Resume</a>]
-    },
-    engineers: {
-      title: "Engineers",
-      description: (
-        <>
-          Driven by technology, innovation, and open source. Explore my technical deep dives and projects over at my{" "}
-          <a 
-            href={profile.links.github} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="transition-colors hover:text-sky-500"
-            style={{ display: "inline-flex", alignItems: "center" }}
-          >
-            GitHub &#x2197;
-          </a>
-        </>
-      ),
-      skills: [<a href="https://drive.google.com/file/d/1s_Dh10yfpDUlSJxw7kyDGyVuuo3OWkhk/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hover:text-[#fefeff] transition-colors">Download Resume</a>]
-    },
-    'product-managers': {
-      title: "Product Managers",
-      description: "I bring technical expertise to product development, bridging the gap between business objectives and technical execution.",
-      skills: [<a href="https://drive.google.com/file/d/1s_Dh10yfpDUlSJxw7kyDGyVuuo3OWkhk/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hover:text-[#fefeff] transition-colors">Download Resume</a>]
-    }
-  };
-
   export default function Home() {
     const [loading, setLoading] = useState(true);
     const [activeSection, setActiveSection] = useState("intro");
-    const [selectedAudience, setSelectedAudience] = useState<AudienceType>("anyone");
     const [isNameExpanded, setIsNameExpanded] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -357,8 +278,7 @@
                       className="text-center max-w-7xl mx-auto"
                     >
                       <AnimatePresence mode="wait">
-                        <motion.div
-                          key={selectedAudience}
+                        <motion.div                          
                           initial={{ opacity: 0, y: 20 }}
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -20 }}
@@ -366,13 +286,6 @@
                         >
                           <p className="text-3xl md:text-6xl text-[#fefeff] leading-tight mb-12 max-w-3xl mx-auto">
                             I'm an experienced professional blending technical knowledge with strong analytical and communication skills, specializing in AI data quality, compliance, and process optimization.
-                          </p>
-                          <div className="flex gap-4 flex-wrap justify-center">
-                            {audienceContent[selectedAudience].skills.map((skill, index) => (
-                              <span key={index} className="text-sm text-[#969696]">
-                                {skill}
-                              </span>
-                            ))}
                           </div>
                           
                           {/* Scroll Down Arrow */}
@@ -414,7 +327,7 @@
                       <div className="mt-16">
                         <div className="relative w-40 h-40 flex-shrink-0 mb-8">
                           <Image
-                            src="/assets/img/logo-invisible-tech.jpg.jpg"
+                            src="/assets/img/logo-invisible-tech.jpg"
                             alt="Invisible Technologies Logo"
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -439,7 +352,7 @@
                       <br/>
                       <div className="relative w-48 h-40 flex-shrink-0 mb-4">
                         <Image
-                          src="/assets/img/logo-revolut.jpg.png"
+                          src="/assets/img/logo-revolut.png"
                           alt="Revolut Logo"
                           fill
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -463,7 +376,7 @@
                       <div className="mt-16">
                         <div className="relative w-24 h-24 flex-shrink-0 mb-8">
                           <Image
-                            src="/assets/img/logo-dask-power.jpg.jpg"
+                            src="/assets/img/logo-dask-power.jpg"
                             alt="Dask Power Pvt. Ltd Logo"
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -497,7 +410,7 @@
                         <div>
                           <div className="relative w-24 h-24 flex-shrink-0 mb-8">
                             <Image
-                              src="/assets/img/logo-kashmir-university.png.png"
+                              src="/assets/img/logo-kashmir-university.png"
                               alt="University of Kashmir Logo"
                               fill
                               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -515,7 +428,7 @@
                         <div>
                           <div className="relative w-24 h-24 flex-shrink-0 mb-8">
                             <Image
-                              src="/assets/img/logo-iust.png.png"
+                              src="/assets/img/logo-iust.png"
                               alt="Islamic University of Science and Technology Logo"
                               fill
                               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
