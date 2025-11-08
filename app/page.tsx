@@ -73,20 +73,6 @@ export default function Home() {
           ))}
         </nav>
 
-        {/* Additional Certifications Button */}
-        <nav className="hidden md:block fixed right-8 top-1/2 -translate-y-1/2 z-40">
-          <div className="mb-4 text-right">
-            <a
-              href="/additional-certifications"
-              className="group flex items-center gap-2 text-sm"
-            >
-              <span className="transition-all duration-300 text-[#969696] hover:text-[#fefeff]">
-                Additional Certifications
-              </span>
-            </a>
-          </div>
-        </nav>
-
         {/* Main Content */}
         <main className="flex-grow">
           <section id="intro" className="min-h-screen px-4 md:px-24">
