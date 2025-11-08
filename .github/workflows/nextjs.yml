@@ -30,9 +30,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build with Next.js
+        # The 'npm run build' script in package.json runs 'next build'.
+        # For static export, we need a next.config.js with output: 'export'.
         run: |
-          echo "/** @type {import('next').NextConfig} */\nconst nextConfig = {\n  output: 'export',\n  images: { unoptimized: true },\n};\n\nmodule.exports = nextConfig;" > next.config.js
-          npm run build
+          echo "/** @type {import('next').NextConfig} */\nconst nextConfig = { output: 'export', images: { unoptimized: true } };\nmodule.exports = nextConfig;" > next.config.js
+          npm run build # This will now correctly generate the 'out' directory.
       - name: Create .nojekyll file
         run: touch ./out/.nojekyll
       - name: Upload artifact
