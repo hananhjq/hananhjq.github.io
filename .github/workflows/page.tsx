@@ -418,7 +418,6 @@
                             alt="Invisible Technologies Logo"
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                            unoptimized
                             style={{ objectFit: "contain" }}
                           />
                         </div>
@@ -443,7 +442,6 @@
                           alt="Revolut Logo"
                           fill
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          unoptimized
                           style={{ objectFit: "contain" }}
                         />
                       </div>
@@ -467,7 +465,6 @@
                             alt="Dask Power Pvt. Ltd Logo"
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                            unoptimized
                             style={{ objectFit: "contain" }}
                           />
                         </div>
@@ -501,7 +498,6 @@
                               alt="University of Kashmir Logo"
                               fill
                               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                              unoptimized
                               style={{ objectFit: "contain" }}
                             />
                           </div>
@@ -519,7 +515,6 @@
                               alt="Islamic University of Science and Technology Logo"
                               fill
                               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                              unoptimized
                               style={{ objectFit: "contain" }}
                             />
                           </div>
@@ -656,7 +651,6 @@
                         src={profile.images.avatar}
                         alt={profile.name}
                         width="300"
-                        height="300"
                         className="mb-8 mx-auto rounded-lg h-auto"
                       />
                       <p className="text-xl md:text-xl text-[#fefeff] underline text-center">{profile.email}</p>
